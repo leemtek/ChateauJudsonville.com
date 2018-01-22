@@ -3,21 +3,20 @@ import './App.css';
 
 import Header from "./shared/Header";
 import Footer from "./shared/Footer";
+import Home from "./main/Home";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div id="wrapper">
         <Header />
         
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Home />
 
         <Footer />
       </div>
     );
-  }
-}
+  } // render()
+} // App
 
 export default App;
