@@ -4,6 +4,7 @@ import '../App.css';
 import Slider from "./home/Slider";
 import Callout from "./home/Callout";
 import About from "./home/About";
+import Gallery from "./home/Gallery";
 import Contact from "./home/Contact";
 
 class Home extends Component {
@@ -21,6 +22,10 @@ class Home extends Component {
         {/* ABOUT */}
         <About />
         {/* /ABOUT */}
+
+        {/* GALLERY */}
+        <Gallery />
+        {/* /GALLERY */}
 
         {/* CONTACT */}
         <Contact />

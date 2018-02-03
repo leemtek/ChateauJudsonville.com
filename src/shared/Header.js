@@ -25,12 +25,12 @@ const app_header = () => {
 										HOME <span>welcome</span>
 									</a>
 									<ul className="dropdown-menu">
-										<li><a href="index.html"><i className="fa fa-reply"></i> Default Home</a></li>
+										<li><a className="scrollTo" href="#wrapper"><i className="fa fa-reply"></i> Default Home</a></li>
 										<li><a className="scrollTo" href="#wrapper"><i className="fa fa-home"></i> Onepage Home</a></li>
 									</ul>
 								</li>
 								<li><a className="scrollTo" href="#section-about">ABOUT <span>about us</span></a></li>
-								<li><a className="scrollTo" href="#section-work">PORTFOLIO <span>projects</span></a></li>
+								<li><a className="scrollTo" href="#section-work">GALLERY <span>view home</span></a></li>
 								<li><a className="scrollTo" href="#section-contact">CONTACT <span>write us</span></a></li>
 							</ul>
 
