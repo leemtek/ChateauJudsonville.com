@@ -5,8 +5,8 @@ const about = () => {
     <section className="alternate" id="section-about" style={{ backgroundColor: '#fff' }}>
       <div className="container">
         <header className="text-center">
-          <h2>Why choose Epona?</h2>
-          <p className="lead">We thrive on making Epona the most complete and trusted template on wrapbootstrap</p>
+          <h2>About Chateau Judsonville</h2>
+          <p className="lead">Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
           <div className="divider half-margins onepage center">{/* lines divider */}</div>
         </header>
 
@@ -47,7 +47,7 @@ const about = () => {
                   <h4 className="panel-title">
                     <a data-toggle="collapse" data-parent="#accordion2" href="#acordion_2">
                       <i className="fa fa-plus"></i>
-                      The Epona Inside
+                      The Chateau Judsonville Inside
                     </a>
                   </h4>
                 </div>
@@ -62,7 +62,7 @@ const about = () => {
                   <h4 className="panel-title">
                     <a data-toggle="collapse" data-parent="#accordion2" href="#acordion_3">
                       <i className="fa fa-plus"></i>
-                      The Epona Philosophy
+                      The Chateau Judsonville Philosophy
                     </a>
                   </h4>
                 </div>

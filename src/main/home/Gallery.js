@@ -38,7 +38,7 @@ const gallery = () => {
                     <img className="img-responsive" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/chateaujudsonville/assets/images/demo/portfolio/a1.jpg" width="260" height="260" alt="" />
                   </figure>
                   <div className="item-box-desc">
-                    <h4>Epona Project</h4>
+                    <h4>Chateau Judsonville Project</h4>
                     <small className="styleColor">29 June, 2014</small>
                   </div>
                 </div>
@@ -76,7 +76,7 @@ const gallery = () => {
                     <img className="img-responsive" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/chateaujudsonville/assets/images/demo/portfolio/a3.jpg" width="260" height="260" alt="" />
                   </figure>
                   <div className="item-box-desc">
-                    <h4>Epona Project</h4>
+                    <h4>Chateau Judsonville Project</h4>
                     <small className="styleColor">29 June, 2014</small>
                   </div>
                 </div>
@@ -95,7 +95,7 @@ const gallery = () => {
                     <img className="img-responsive" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/chateaujudsonville/assets/images/demo/portfolio/a4.jpg" width="260" height="260" alt="" />
                   </figure>
                   <div className="item-box-desc">
-                    <h4>Epona Project</h4>
+                    <h4>Chateau Judsonville Project</h4>
                     <small className="styleColor">29 June, 2014</small>
                   </div>
                 </div>
@@ -133,37 +133,13 @@ const gallery = () => {
                     <img className="img-responsive" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/chateaujudsonville/assets/images/demo/portfolio/a6.jpg" width="260" height="260" alt="" />
                   </figure>
                   <div className="item-box-desc">
-                    <h4>Epona Project</h4>
+                    <h4>Chateau Judsonville Project</h4>
                     <small className="styleColor">29 June, 2014</small>
                   </div>
                 </div>
               </li>
-
             </ul>
-
           </div>{/* /.masonry-container */}
-
-          {/* CALLOUT */}
-          <div className="alert alert-default fade in">
-
-            <div className="row">
-
-              <div className="col-md-9 col-sm-9">{/* left text */}
-                <h4>Purchase <strong>Epona Template</strong></h4>
-                <p>
-                  We truly care about our users and our product. Which is why we are constantly improving Epona for our beloved users.
-                </p>
-              </div>{/* /left text */}
-
-              
-              <div className="col-md-3 col-sm-3 text-right">{/* right button */}
-                <a href="#purchase" rel="nofollow" target="_blank" className="btn btn-primary btn-lg">PURCHASE NOW</a>
-              </div>{/* /right btn */}
-
-            </div>
-
-          </div>
-          {/* /CALLOUT */}
 
         </div>{/* portfolio */}
       </div>
