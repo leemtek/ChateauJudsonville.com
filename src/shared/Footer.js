@@ -92,9 +92,7 @@ const footer = () => {
 
       <div className="copyright">
         <div className="container text-center fsize12">
-          Epona theme by <a href="http://www.stepofweb.com" target="_blank" title="bootstrap themes &amp; templates" className="copyright">stepofweb</a> &bull; All Right Reserved &copy; Your Company LLC. &nbsp;
-          <a href="page-privacy.html" className="fsize11">Privacy Policy</a> &bull; 
-          <a href="page-terms.html" className="fsize11">Terms of Service</a>
+          Web Development by <a href="https://duaneleem.com" target="_blank" title="React Programming" className="copyright">Duane Leem</a> &bull; All Right Reserved &copy; Chateau Judsonville.
         </div>
       </div>
     </footer>
