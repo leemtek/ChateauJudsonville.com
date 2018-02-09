@@ -104,7 +104,7 @@ const gallery = () => {
               <li className="sotope-item col-sm-6 col-md-4 development">{/* item 5 */}
                 <div className="item-box">
                   <figure>
-                    <a className="item-hover lightbox" href="http://www.youtube.com/watch?v=W7Las-MJnJo" data-plugin-options='{"type":"iframe"}'>
+                    <a className="item-hover lightbox" href="https://d1xrp9zhb3ks3c.cloudfront.net/web/chateaujudsonville/assets/images/demo/portfolio/a1.jpg" data-plugin-options='{"type":"iframe"}'>
                       <span className="overlay color2"></span>
                       <span className="inner">
                         <span className="block fa fa-plus fsize20"></span>
