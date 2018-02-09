@@ -138,32 +138,8 @@ const gallery = () => {
                   </div>
                 </div>
               </li>
-
             </ul>
-
           </div>{/* /.masonry-container */}
-
-          {/* CALLOUT */}
-          <div className="alert alert-default fade in">
-
-            <div className="row">
-
-              <div className="col-md-9 col-sm-9">{/* left text */}
-                <h4>Purchase <strong>Epona Template</strong></h4>
-                <p>
-                  We truly care about our users and our product. Which is why we are constantly improving Epona for our beloved users.
-                </p>
-              </div>{/* /left text */}
-
-              
-              <div className="col-md-3 col-sm-3 text-right">{/* right button */}
-                <a href="#purchase" rel="nofollow" target="_blank" className="btn btn-primary btn-lg">PURCHASE NOW</a>
-              </div>{/* /right btn */}
-
-            </div>
-
-          </div>
-          {/* /CALLOUT */}
 
         </div>{/* portfolio */}
       </div>
