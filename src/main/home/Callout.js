@@ -8,12 +8,12 @@ const callout = () => {
         <div className="row">
 
           <div className="col-md-9">{/* title + shortdesc */}
-            <h3>The best way to grow your business on the internet</h3>
-            <p>Check Epona included features and options.</p>
+            <h3>Praesent sapien massa, convallis a pellentesque nec.</h3>
+            <p>Nulla porttitor accumsan tincidunt.</p>
           </div>
 
           <div className="col-md-3">{/* button */}
-            <a href="#purchase" className="btn btn-primary btn-lg">Get Started Now</a>
+            <a href="#purchase" className="btn btn-primary btn-lg">Contact Us Today</a>
           </div>
 
         </div>
