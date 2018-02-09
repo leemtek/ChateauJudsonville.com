@@ -38,7 +38,7 @@ const gallery = () => {
                     <img className="img-responsive" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/chateaujudsonville/assets/images/demo/portfolio/a1.jpg" width="260" height="260" alt="" />
                   </figure>
                   <div className="item-box-desc">
-                    <h4>Epona Project</h4>
+                    <h4>Chateau Judsonville Project</h4>
                     <small className="styleColor">29 June, 2014</small>
                   </div>
                 </div>
@@ -76,7 +76,7 @@ const gallery = () => {
                     <img className="img-responsive" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/chateaujudsonville/assets/images/demo/portfolio/a3.jpg" width="260" height="260" alt="" />
                   </figure>
                   <div className="item-box-desc">
-                    <h4>Epona Project</h4>
+                    <h4>Chateau Judsonville Project</h4>
                     <small className="styleColor">29 June, 2014</small>
                   </div>
                 </div>
@@ -95,7 +95,7 @@ const gallery = () => {
                     <img className="img-responsive" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/chateaujudsonville/assets/images/demo/portfolio/a4.jpg" width="260" height="260" alt="" />
                   </figure>
                   <div className="item-box-desc">
-                    <h4>Epona Project</h4>
+                    <h4>Chateau Judsonville Project</h4>
                     <small className="styleColor">29 June, 2014</small>
                   </div>
                 </div>
@@ -133,7 +133,7 @@ const gallery = () => {
                     <img className="img-responsive" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/chateaujudsonville/assets/images/demo/portfolio/a6.jpg" width="260" height="260" alt="" />
                   </figure>
                   <div className="item-box-desc">
-                    <h4>Epona Project</h4>
+                    <h4>Chateau Judsonville Project</h4>
                     <small className="styleColor">29 June, 2014</small>
                   </div>
                 </div>

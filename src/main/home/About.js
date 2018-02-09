@@ -47,7 +47,7 @@ const about = () => {
                   <h4 className="panel-title">
                     <a data-toggle="collapse" data-parent="#accordion2" href="#acordion_2">
                       <i className="fa fa-plus"></i>
-                      The Epona Inside
+                      The Chateau Judsonville Inside
                     </a>
                   </h4>
                 </div>
@@ -62,7 +62,7 @@ const about = () => {
                   <h4 className="panel-title">
                     <a data-toggle="collapse" data-parent="#accordion2" href="#acordion_3">
                       <i className="fa fa-plus"></i>
-                      The Epona Philosophy
+                      The Chateau Judsonville Philosophy
                     </a>
                   </h4>
                 </div>

@@ -10,14 +10,14 @@ const footer = () => {
           {/* col #1 */}
           <div className="logo_footer dark col-md-3">
 
-            <img alt="" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/chateaujudsonville/assets/images/logo_footer.png" height="50" className="logo" />
+            <img alt="" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/chateaujudsonville/images/logo-dark.png" height="50" className="logo" />
 
             <p className="block">
-              4th Street, Suite 88<br />
-              New York NY 10887<br />
-              Email: youremail@yourdomain.com<br />
-              Phone: +40 (0) 111 1234 567<br />
-              Fax: +40 (0) 111 1234 568<br />
+              <a href="https://maps.google.com/?q=5220+Judsonville+Dr.+Antioch,%C2%A0+94531&entry=gmail&source=g" target="_blank">5220 Judsonville Dr.<br />Antioch, CA 94531</a><br />
+              Email: <a href="mailto:ChateauJudsonville@gmail.com">ChateauJudsonville@gmail.com</a><br />
+              Phone: <a href="tel:9257268584">925-726-8584</a><br />
+              Fax: 925-204-1500<br /><br />
+              License: 075601534
             </p>
 
             <p className="block">
