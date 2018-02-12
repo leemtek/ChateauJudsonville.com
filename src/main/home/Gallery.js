@@ -6,7 +6,7 @@ const gallery = () => {
       <div className="container">
         <header className="text-center">
           <h1 className="font-dosis">
-            <strong>OUR</strong> WORK
+            <strong>CHATEAU JUDSONVILLE HOME</strong>
           </h1>
 
           <div className="divider half-margins onepage center">{/* lines divider */}</div>
@@ -34,13 +34,13 @@ const gallery = () => {
             <li className="col-sm-4">{/* item */}
               <div className="item-box">
                 <figure>
-                  <a className="item-hover" href="http://d1xrp9zhb3ks3c.cloudfront.net/web/chateaujudsonville/images/front-house-2.jpg">
+                  <a className="item-hover" href="https://d1xrp9zhb3ks3c.cloudfront.net/web/chateaujudsonville/images/front-house-2.jpg">
                     <span className="overlay color2"></span>
                     <span className="inner">
                       <strong>VIEW</strong> IMAGE
                     </span>
                   </a>
-                  <img className="img-responsive" src="http://d1xrp9zhb3ks3c.cloudfront.net/web/chateaujudsonville/images/front-house-2.jpg" width="260" height="260" alt="" />
+                  <img className="img-responsive" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/chateaujudsonville/images/front-house-2.jpg" width="260" height="260" alt="" />
                 </figure>
               </div>
             </li>
