@@ -44,9 +44,9 @@ const slider = () => {
               data-start="1400"
               data-easing="easeOutExpo">
                 <div style={{width: "50%"}}>
-                  Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. <br />
-                  Proin eget tortor risus. Nulla quis lorem ut libero malesuada feugiat. <br />
-                  Vivamus suscipit tortor eget felis porttitor volutpat.
+                Family style living for elderly individuals who need help and<br />
+                support in everyday activities while maintaining a sense of<br />
+                independence and privacy.
                 </div>
             </div>
 
