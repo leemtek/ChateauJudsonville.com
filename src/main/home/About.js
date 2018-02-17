@@ -2,7 +2,7 @@ import React from "react";
 
 const about = () => {
   return (
-    <section className="alternate" id="section-about" style={{ backgroundColor: '#fff' }}>
+    <section className="alternate" id="section-about" styles={{ backgroundColor: '#fff' }}>
       <div className="container">
         <header className="text-center">
           <h2>About Chateau Judsonville</h2>
@@ -14,13 +14,38 @@ const about = () => {
         <div className="row">
 
           <div className="col-md-4 col-sm-6">
-            <h4>Passion</h4>
-            <p className="dropcap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et elementum erat, biluctus mi. Quisque consequat risus quis tincidunt fringilla. Ut sed rhoncus metus, in rhoncus dolor. Integer tempor ligula est, sed luctus metus tempus a. Pellentesque tempor libero et arcu bibendum mollis. Aliquam eu odio eget diam egestas euismod vel sed orc aenean.</p>
+            <h4>Services</h4>
+            <p className="dropcap">We are a non-medical facility that provide services that caters to meet each Residents' need.</p>
+            <p>Here is a list of services we offer:</p>
+            <ul>
+              <li>Continuous 24-Hour care and supervision</li>
+              <li>3 nutritious meals daily and snacks available</li>
+              <li>Special diet prescribed by physician</li>
+              <li>Assistance with personal activities of daily living (dressing, toileting, eating, bathing, grooming and mobility)</li>
+              <li>Assistance in taking the prescribed and over the counter medications</li>
+              <li>Laundering of personal clothing</li>
+              <li>Clean bed and bath linens weekly or as often as needed</li>
+              <li>Cleaning of Resident's room</li>
+              <li>Assistance in meeting the necessary medical and physical needs of the resident</li>
+              <li>Daily Observation of changes in physical, mental, emotional and social functioning.</li>
+              <li>Planned and activity program including arrangement for utilization of available community resources.</li>
+              <li>Bedside care and tray service for minor temporary illnesses or recovery from surgery.</li>
+            </ul>
           </div>
 
           <div className="col-md-4 col-sm-6">
-            <h4>Precision</h4>
-            <p>Pellentesque tempor libero et arcu bibendum mollis. Donec eu porta elit. Aliquam porta sollicitudin ante, ac fermentum orci mattis et. Phasellus ac nibh eleifend, sagittis purus nec, elementum massa. Quisque tincidunt sapien a sem porttitor, id convallis dolor pharetra. Donec tempor cursus facilisis. Ut eu elementum arcu, vel hendrerit nisi. Cras sed euismod nibh, a adipiscing.</p>
+            <h4>Amenities</h4>
+            <p>Established in the beautiful city of Antioch California near the Lone Tree Golf and our Contra Loma Regional Park.</p>
+
+            <p>Our facility offers:<br />
+            2 Private Bedroom fully-furnished
+            1 Shared Bedroom fully-furnished
+            Each room includes HD Flat Screen Tv
+            with telephone.</p>
+
+            <p>*Unfurnished room option available
+            upon request if Resident prefers their
+            own furniture.</p>
           </div>
 
           <div className="col-md-4 col-sm-12">
@@ -38,7 +63,10 @@ const about = () => {
                 </div>
                 <div id="acordion_1" className="collapse">
                   <div className="panel-body">
-                    Lorem Ipsum, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia.
+                  Our mission is to fully meet the needs of each of our Residents' while challenging them to the highest level of personal independence in 
+                  the tasks of daily living.<br /><br />
+                  We strive to enhance and enrich the lives of our Residents' by creating a safe and comfortable environment that
+                  tends and stimulates individuals emotionally, physically, mentally and spiritually.
                   </div>
                 </div>
               </div>
