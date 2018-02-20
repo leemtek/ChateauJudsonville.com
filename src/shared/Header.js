@@ -20,15 +20,7 @@ const app_header = () => {
 						<nav className="nav-main">
 
 							<ul id="topMain" className="nav nav-pills nav-main">
-								<li className="dropdown">
-									<a className="scrollTo dropdown-toggle" href="#wrapper">
-										HOME <span>welcome</span>
-									</a>
-									<ul className="dropdown-menu">
-										<li><a className="scrollTo" href="#wrapper"><i className="fa fa-reply"></i> Default Home</a></li>
-										<li><a className="scrollTo" href="#wrapper"><i className="fa fa-home"></i> Onepage Home</a></li>
-									</ul>
-								</li>
+								<li><a className="scrollTo" href="#wrapper">HOME <span>welcome</span></a></li>
 								<li><a className="scrollTo" href="#section-about">ABOUT <span>about us</span></a></li>
 								<li><a className="scrollTo" href="#section-work">GALLERY <span>view home</span></a></li>
 								<li><a className="scrollTo" href="#section-contact">CONTACT <span>write us</span></a></li>
