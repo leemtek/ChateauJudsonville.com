@@ -10,7 +10,7 @@ const footer = () => {
           {/* col #1 */}
           <div className="logo_footer dark col-md-3">
 
-            <img alt="" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/chateaujudsonville/images/logo-dark.png" height="50" className="logo" />
+            <img alt="" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/chateaujudsonville/assets/images/logo-white.png" height="50" className="logo" />
 
             <p>"Treating residents as family."</p>
 
@@ -33,27 +33,21 @@ const footer = () => {
           {/* /col #1 */}
 
           {/* col #2 */}
-          <div className="spaced col-md-3 col-sm-4">
-
-          </div>
-          {/* /col #2 */}
-
-          {/* col #3 */}
-          <div class="spaced col-md-3 col-sm-4">
+          <div class="spaced col-md-offset-3 col-sm-4 col-md-3">
             <h4>About <strong>Us</strong></h4>
             <p>
-              <strong>Norman & Malou Bolotaolo</strong><br />
+              <strong>Norman &amp; Malou Bolotaolo</strong><br />
               <em>Owners/Administrators</em>
             </p>
           </div>
-          {/* /col #3 */}
+          {/* /col #2 */}
             
-          {/* col #4 */}
+          {/* col #3 */}
           <div className="spaced col-md-3 col-sm-4">
-            <h4>About <strong>Us</strong></h4>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.7447549999943!2d-121.82032698438086!3d37.959745409268294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808558069e1ec975%3A0x19a19011fb134041!2s5220+Judsonville+Dr%2C+Antioch%2C+CA+94531!5e0!3m2!1sen!2sus!4v1518723180380" width="100%" height="450" frameborder="0" styles='border:0' allowfullscreen></iframe>
+            <h4>Find <strong>Us</strong></h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.7447549999943!2d-121.82032698438086!3d37.959745409268294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808558069e1ec975%3A0x19a19011fb134041!2s5220+Judsonville+Dr%2C+Antioch%2C+CA+94531!5e0!3m2!1sen!2sus!4v1518723180380" width="100%" height="250" frameborder="0" styles='border:0' allowfullscreen></iframe>
           </div>
-          {/* /col #4 */}
+          {/* /col #3 */}
 
         </div>
 
