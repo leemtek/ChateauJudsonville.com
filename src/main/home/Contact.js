@@ -7,9 +7,9 @@ const contact = () => {
 
         <header className="text-center">
 
-          <h1 className="font-dosis">
-            CONTACT
-          </h1>
+          <h2 className="font-dosis">
+            <strong>CONTACT</strong>
+          </h2>
           
           <div className="divider half-margins onepage center">{/* lines divider */}</div>
 

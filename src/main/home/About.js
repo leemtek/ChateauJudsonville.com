@@ -5,7 +5,9 @@ const about = () => {
     <section className="alternate" id="section-about" styles={{ backgroundColor: '#fff' }}>
       <div className="container">
         <header className="text-center">
-          <h2>About Chateau Judsonville</h2>
+          <h2 className="font-dosis">
+            <strong>ABOUT CHATEAU JUDSONVILLE</strong>
+          </h2>
           <p className="lead">Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
           <div className="divider half-margins onepage center">{/* lines divider */}</div>
         </header>

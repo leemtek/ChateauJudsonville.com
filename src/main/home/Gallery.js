@@ -5,9 +5,9 @@ const gallery = () => {
     <section id="section-work" className="alternate">
       <div className="container">
         <header className="text-center">
-          <h1 className="font-dosis">
+          <h2 className="font-dosis">
             <strong>CHATEAU JUDSONVILLE HOME</strong>
-          </h1>
+          </h2>
 
           <div className="divider half-margins onepage center">{/* lines divider */}</div>
 
