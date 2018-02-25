@@ -17,10 +17,8 @@ const contact = () => {
 
         <div className="text-center">
           <h4>Drop us a line or <strong>just say</strong> <em><strong>Hello!</strong></em></h4>
-          <p>
-          Have any specific needs or want youd like to disscuss? Questions? <strong>We're happy</strong>   <br />
-          to disscuss any needs, wants or questions you may have. We cant wait to hear from you
-          </p>
+          <p>Have any specific needs or want you would like to discuss? Questions? <strong>We're happy</strong><br />
+          to disscuss any needs, wants, or questions you may have. We cant wait to hear from you!</p>
         </div>
 
         {/* Form */}
