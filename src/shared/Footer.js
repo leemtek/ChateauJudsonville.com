@@ -57,7 +57,7 @@ const footer = () => {
 
       <div className="copyright">
         <div className="container text-center fsize12">
-          Web Development by <a href="https://duaneleem.com" target="_blank" title="React Programming" className="copyright">Duane Leem</a> &bull; All Right Reserved &copy; Chateau Judsonville.
+          Web Development by <a href="https://duaneleem.com" target="_blank" title="React Programming" className="copyright">LeemTek</a> &bull; All Right Reserved &copy; Chateau Judsonville.
         </div>
       </div>
     </footer>

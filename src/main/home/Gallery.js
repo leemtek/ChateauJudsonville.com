@@ -2,7 +2,7 @@ import React from "react";
 
 const gallery = () => {
   return (
-    <section id="section-work" className="alternate">
+    <section id="section-work" className="alternate" style={{ backgroundColor: '#fff' }}>
       <div className="container">
         <header className="text-center">
           <h2 className="font-dosis">
