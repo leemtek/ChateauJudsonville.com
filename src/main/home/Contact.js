@@ -18,8 +18,8 @@ const contact = () => {
         <div className="text-center">
           <h4>Drop us a line or <strong>just say</strong> <em><strong>Hello!</strong></em></h4>
           <p>
-            Lorem ipsum dolor sit amet, <strong>consectetur adipiscing</strong> elit. <br />
-            Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc.
+          Have any specific needs or want youd like to disscuss? Questions? <strong>We're happy</strong>   <br />
+          to disscuss any needs, wants or questions you may have. We cant wait to hear from you
           </p>
         </div>
 
