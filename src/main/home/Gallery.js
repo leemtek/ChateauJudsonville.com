@@ -13,8 +13,8 @@ const gallery = () => {
 
         </header>
         
-        <p className="lead">Our homes are just that.. Homes. Live the way youve always had  with assitance, to make it that much easier. We offer 2 Private Bedrooms and 1 shared fully furnished or unfurnished (Option is avalible upon request) Rooms Include a Telephone and a High-Definition Television.
-</p>
+        <p className="lead">Our homes are just that... homes. Live the way you've always had with assistance, to make it that much easier. We offer 2 private 
+        bedrooms and 1 shared fully furnished or unfurnished (option is available upon request) rooms include a telephone and a high-definition television.</p>
 
         <div id="portfolio">
           <ul className="lightbox nomargin-left list-unstyled" data-plugin-options='{"delegate": "a", "gallery": {"enabled": true}}'>
