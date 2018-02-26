@@ -8,7 +8,8 @@ const about = () => {
           <h2 className="font-dosis">
             <strong>ABOUT CHATEAU JUDSONVILLE</strong>
           </h2>
-          <p className="lead">Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+          <p className="lead">Helping you continue to live your life the way you've always have. We strive to meet your needs while helping you 
+          live life to your fullest potentional.</p>
           <div className="divider half-margins onepage center">{/* lines divider */}</div>
         </header>
 

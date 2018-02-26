@@ -2,7 +2,7 @@ import React from "react";
 
 const gallery = () => {
   return (
-    <section id="section-work" className="alternate">
+    <section id="section-work" className="alternate" style={{ backgroundColor: '#fff' }}>
       <div className="container">
         <header className="text-center">
           <h2 className="font-dosis">
@@ -13,7 +13,8 @@ const gallery = () => {
 
         </header>
         
-        <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et.</p>
+        <p className="lead">Our homes are just that... homes. Live the way you've always had with assistance, to make it that much easier. We offer 2 private 
+        bedrooms and 1 shared fully furnished or unfurnished (option is available upon request) rooms include a telephone and a high-definition television.</p>
 
         <div id="portfolio">
           <ul className="lightbox nomargin-left list-unstyled" data-plugin-options='{"delegate": "a", "gallery": {"enabled": true}}'>
