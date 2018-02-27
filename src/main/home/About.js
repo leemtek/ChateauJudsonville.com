@@ -9,7 +9,7 @@ const about = () => {
             <strong>ABOUT CHATEAU JUDSONVILLE</strong>
           </h2>
           <p className="lead">Helping you continue to live your life the way you've always have. We strive to meet your needs while helping you 
-          live life to your fullest potentional.</p>
+          live life to your fullest potential.</p>
           <div className="divider half-margins onepage center">{/* lines divider */}</div>
         </header>
 
