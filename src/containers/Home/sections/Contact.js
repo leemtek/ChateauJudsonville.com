@@ -19,7 +19,7 @@ export default class Contact extends Component {
     this.setState({ canSubmit: true });
   }
 
-  submit(model) {
+  handleSubmit(model) {
     // fetch('http://example.com/', {
     //   method: 'post',
     //   body: JSON.stringify(model)
@@ -50,7 +50,7 @@ export default class Contact extends Component {
           </div>
 
           {/* Form */}
-          <Formsy id="onepageContact" className="onepage block form-inline margin-top60" onValidSubmit={this.submit} onValid={this.enableButton} onInvalid={this.disableButton}>
+          <Formsy id="onepageContact" className="onepage block form-inline margin-top60" onValidSubmit={this.handleSubmit} onValid={this.enableButton} onInvalid={this.disableButton}>
             <div className="row">
               <div className="col-md-4">
                 <CjInput className="fullwidth" type="text" 
@@ -65,7 +65,7 @@ export default class Contact extends Component {
                   placeholder="EMAIL *" 
                   title="Email"
                   validations="isEmail"
-                  validationError="Invalid Email"
+                  validationError="Invalid Email. Required format: username@domain.com"
                   required />
               </div>
               <div className="col-md-4">
