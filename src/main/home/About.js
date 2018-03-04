@@ -8,8 +8,8 @@ const about = () => {
           <h2 className="font-dosis">
             <strong>ABOUT CHATEAU JUDSONVILLE</strong>
           </h2>
-          <p className="lead">Helping you continue to live your life the way you've always have. We strive to meet your needs while helping you 
-          live life to your fullest potentional.</p>
+          <p className="lead">helping you continue to live your life the way youve always have. we strive to meet  your needs while helping you live life to your fullest potentional 
+</p>
           <div className="divider half-margins onepage center">{/* lines divider */}</div>
         </header>
 
@@ -84,7 +84,7 @@ const about = () => {
                 </div>
                 <div id="acordion_2" className="collapse">
                   <div className="panel-body">
-                    Lorem Ipsum, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia.
+                  A modern single floor  Californian home  3477sq feet with lots of open space. Bathrooms with updated counterspace and sinks. A place weve created where you can kick up your feet and call home
                   </div>
                 </div>
               </div>
@@ -114,7 +114,7 @@ const about = () => {
                 </div>
                 <div id="acordion_4" className="collapse">
                   <div className="panel-body">
-                    Lorem Ipsum, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia.
+                  We aim to keep surround ourselves and our residents with the highest caliber caregivers around. Do you feel like you're one of these people? please Send us an email and we'd love to sit down to meet with you!
                   </div>
                 </div>
               </div>
@@ -130,6 +130,6 @@ const about = () => {
       </div>
     </section>
   );
-}
+
 
 export default about;
