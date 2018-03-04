@@ -100,7 +100,7 @@ const about = () => {
                 </div>
                 <div id="acordion_3" className="collapse">
                   <div className="panel-body">
-                    Lorem Ipsum, tellus ac cursus commodo, mauris sit condim eser ntumsi nibh, uum a justo vitaes amet risus amets un. Posi sectetut amet fermntum orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia.
+                    We're always striving to aim higher by helping our residents to continue living their most <strong>meaningful</strong> life in a comfortable setting with our help.
                   </div>
                 </div>
               </div>
