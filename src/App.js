@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import Header from "./shared/Header";
-import Footer from "./shared/Footer";
+import Header from "./components/Navigation/Header/Header";
+import Footer from "./components/Navigation/Footer/Footer";
 import Home from "./main/Home";
 
 class App extends Component {
