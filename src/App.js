@@ -3,7 +3,7 @@ import './App.css';
 
 import Header from "./components/Navigation/Header/Header";
 import Footer from "./components/Navigation/Footer/Footer";
-import Home from "./main/Home";
+import Home from "./containers/Home/Home";
 
 class App extends Component {
   render() {

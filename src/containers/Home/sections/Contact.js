@@ -1,5 +1,4 @@
 import React from "react";
-import Input from "../../components/UI/Input/Input";
 
 class Contact extends React.Component {
   state = {
@@ -56,13 +55,13 @@ class Contact extends React.Component {
           {/* Form */}
           <form id="onepageContact" className="onepage block form-inline margin-top60">
             <div className="row">
-              <div className="col-md-4"><Input inputtype="input" required className="fullwidth" type="text" name="contact_name" id="contact_name" value="" placeholder="NAME *" title="Name" /></div>
-              <div className="col-md-4"><Input inputtype="input" required className="fullwidth" type="email" name="newsletter_email" id="newsletter_email" value="" placeholder="EMAIL *" title="Email" /></div>
-              <div className="col-md-4"><Input inputtype="input" className="fullwidth" type="text" name="contact_subject" id="contact_subject" value="" placeholder="SUBJECT" title="subject" /></div>
+              <div className="col-md-4"><input required className="fullwidth" type="text" name="contact_name" id="contact_name" value="" placeholder="NAME *" title="Name" /></div>
+              <div className="col-md-4"><input required className="fullwidth" type="email" name="newsletter_email" id="newsletter_email" value="" placeholder="EMAIL *" title="Email" /></div>
+              <div className="col-md-4"><input className="fullwidth" type="text" name="contact_subject" id="contact_subject" value="" placeholder="SUBJECT" title="subject" /></div>
             </div>
 
             <div className="row">
-              <div className="col-md-12"><Input inputtype="textarea" required className="fullwidth" rows="5" name="contact_comment" id="contact_comment" placeholder="MESSAGE *" /></div>
+              <div className="col-md-12"><textarea required className="fullwidth" rows="5" name="contact_comment" id="contact_comment" placeholder="MESSAGE *"></textarea></div>
               <div className="col-md-12">
                 <button id="contact_submit" className="btn btn-primary">SEND MESSAGE</button>
               </div>
