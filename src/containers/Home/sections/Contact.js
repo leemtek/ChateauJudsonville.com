@@ -1,36 +1,33 @@
-import React from "react";
+import React, { Component } from 'react'
+import Formsy from 'formsy-react';
+import CjInput from "../../../components/UI/Input/HomeContact/CjInput";
+import CjTextArea from "../../../components/UI/Input/HomeContact/CjTextArea";
 
-class Contact extends React.Component {
-  state = {
-    contactForm: {
-      name: {
-        elementType: "input",
-        elementConfig: {
-          type: "text",
-          placeholder: "NAME *"
-        },
-        value: ""
-      },
-      email: {
-        elementType: "input",
-        elementConfig: {
-          type: "email",
-          placeholder: "EMAIL *"
-        },
-        value: ""
-      },
-      subject: {
-        elementType: "input",
-        elementConfig: {
-          type: "text",
-          placeholder: "SUBJECT"
-        },
-        value: ""
-      },
-      message: ""
-    }
-  };
-  
+export default class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.disableButton = this.disableButton.bind(this);
+    this.enableButton = this.enableButton.bind(this);
+    this.state = { canSubmit: false };
+  }
+
+  disableButton() {
+    this.setState({ canSubmit: false });
+  }
+
+  enableButton() {
+    this.setState({ canSubmit: true });
+  }
+
+  submit(model) {
+    // fetch('http://example.com/', {
+    //   method: 'post',
+    //   body: JSON.stringify(model)
+    // });
+
+    console.log(model);
+  }
+
   render() {
     return (
       <section id="section-contact" className="alternate">
@@ -53,24 +50,46 @@ class Contact extends React.Component {
           </div>
 
           {/* Form */}
-          <form id="onepageContact" className="onepage block form-inline margin-top60">
+          <Formsy id="onepageContact" className="onepage block form-inline margin-top60" onValidSubmit={this.submit} onValid={this.enableButton} onInvalid={this.disableButton}>
             <div className="row">
-              <div className="col-md-4"><input required className="fullwidth" type="text" name="contact_name" id="contact_name" value="" placeholder="NAME *" title="Name" /></div>
-              <div className="col-md-4"><input required className="fullwidth" type="email" name="newsletter_email" id="newsletter_email" value="" placeholder="EMAIL *" title="Email" /></div>
-              <div className="col-md-4"><input className="fullwidth" type="text" name="contact_subject" id="contact_subject" value="" placeholder="SUBJECT" title="subject" /></div>
+              <div className="col-md-4">
+                <CjInput className="fullwidth" type="text" 
+                  name="contact_name" 
+                  placeholder="NAME *" 
+                  title="Name"
+                  required />
+              </div>{/* /.col */}
+              <div className="col-md-4">
+                <CjInput className="fullwidth" type="email" 
+                  name="contact_email"
+                  placeholder="EMAIL *" 
+                  title="Email"
+                  validations="isEmail"
+                  validationError="Invalid Email"
+                  required />
+              </div>
+              <div className="col-md-4">
+                <CjInput className="fullwidth" type="text" 
+                name="contact_subject"
+                placeholder="SUBJECT" 
+                title="subject" />
+              </div>
             </div>
 
             <div className="row">
-              <div className="col-md-12"><textarea required className="fullwidth" rows="5" name="contact_comment" id="contact_comment" placeholder="MESSAGE *"></textarea></div>
               <div className="col-md-12">
-                <button id="contact_submit" className="btn btn-primary">SEND MESSAGE</button>
+                <CjTextArea className="fullwidth" rows="5" type="textarea" 
+                  name="contact_message" 
+                  placeholder="MESSAGE *"
+                  required />
+              </div>
+              <div className="col-md-12">
+                <button className="btn btn-primary" disabled={!this.state.canSubmit}>SEND MESSAGE</button>
               </div>
             </div>
-          </form>
+          </Formsy>
         </div>
       </section>
     ); // return
   } // render()
 }
-
-export default Contact;
