@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import '../App.css';
+import '../../App.css';
 
-import Slider from "./home/Slider";
-import Callout from "./home/Callout";
-import About from "./home/About";
-import Gallery from "./home/Gallery";
-import Contact from "./home/Contact";
+import Slider from "./sections/Slider";
+import Callout from "./sections/Callout";
+import About from "./sections/About";
+import Gallery from "./sections/Gallery";
+import Contact from "./sections/Contact";
 
 class Home extends Component {
   render() {

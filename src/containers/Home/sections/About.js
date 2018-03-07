@@ -8,7 +8,8 @@ const about = () => {
           <h2 className="font-dosis">
             <strong>ABOUT CHATEAU JUDSONVILLE</strong>
           </h2>
-          <p className="lead">helping you continue to live your life the way youve always have. we strive to meet  your needs while helping you live life to your fullest potentional </p>
+          <p className="lead">Helping you continue to live your life the way you've always have. We strive to meet your needs while helping you 
+          live life to your fullest potential.</p>
           <div className="divider half-margins onepage center">{/* lines divider */}</div>
         </header>
 
@@ -83,12 +84,8 @@ const about = () => {
                 </div>
                 <div id="acordion_2" className="collapse">
                   <div className="panel-body">
-<<<<<<< HEAD
-                  A modern single level Californian home, 3,477sq feet with ample open space. Bathrooms with updated counterspace and sinks. A place we've created where you can kick up your feet and call home.
-=======
                   A modern single floor Californian home 3,477sq feet with lots of open space. Bathrooms with updated counter space and sinks. A place we've 
                   created where you can kick up your feet and call home.
->>>>>>> b0e9dd8b67fb33731d92cc972a1c1674b7ad0cc5
                   </div>
                 </div>
               </div>
@@ -103,11 +100,7 @@ const about = () => {
                 </div>
                 <div id="acordion_3" className="collapse">
                   <div className="panel-body">
-<<<<<<< HEAD
-                  We're always striving to aim higher by helping our residents to continue living their most <b>meaningful</b> life in a comfortable setting with our help.                  
-=======
                     We're always striving to aim higher by helping our residents to continue living their most <strong>meaningful</strong> life in a comfortable setting with our help.
->>>>>>> b0e9dd8b67fb33731d92cc972a1c1674b7ad0cc5
                   </div>
                 </div>
               </div>
@@ -122,12 +115,8 @@ const about = () => {
                 </div>
                 <div id="acordion_4" className="collapse">
                   <div className="panel-body">
-<<<<<<< HEAD
-                  We aim to surround ourselves and our residents with the highest caliber caregivers around. Do you feel like you're one of these people? Please drop us a line or E-mail,  we'd love to sit down and meet with you!
-=======
                   We aim to keep surround ourselves and our residents with the highest caliber caregivers around. Do you feel like you're one of these people? 
                   Please Send us an e-mail and we'd love to sit down to meet with you!
->>>>>>> b0e9dd8b67fb33731d92cc972a1c1674b7ad0cc5
                   </div>
                 </div>
               </div>
@@ -143,11 +132,6 @@ const about = () => {
       </div>
     </section>
   );
-<<<<<<< HEAD
-
-};
-=======
 }
 
->>>>>>> b0e9dd8b67fb33731d92cc972a1c1674b7ad0cc5
 export default about;
