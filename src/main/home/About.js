@@ -17,7 +17,7 @@ const about = () => {
 
           <div className="col-md-4 col-sm-6">
             <h4>Services</h4>
-            <p className="dropcap">We are a non-medical facility that provide services that caters to meet each Residents' need.</p>
+            <p className="dropcap">We are a non-medical facility that provide services that caters to meet each Resident's need.</p>
             <p>Here is a list of services we offer:</p>
             <ul>
               <li>Continuous 24-Hour care and supervision</li>
@@ -67,7 +67,7 @@ const about = () => {
                   <div className="panel-body">
                   Our mission is to fully meet the needs of each of our Residents' while challenging them to the highest level of personal independence in 
                   the tasks of daily living.<br /><br />
-                  We strive to enhance and enrich the lives of our Residents' by creating a safe and comfortable environment that
+                  We strive to enhance and enrich the lives of our Resident's by creating a safe and comfortable environment that
                   tends and stimulates individuals emotionally, physically, mentally and spiritually.
                   </div>
                 </div>
@@ -83,7 +83,12 @@ const about = () => {
                 </div>
                 <div id="acordion_2" className="collapse">
                   <div className="panel-body">
+<<<<<<< HEAD
                   A modern single level Californian home, 3,477sq feet with ample open space. Bathrooms with updated counterspace and sinks. A place we've created where you can kick up your feet and call home.
+=======
+                  A modern single floor Californian home 3,477sq feet with lots of open space. Bathrooms with updated counter space and sinks. A place we've 
+                  created where you can kick up your feet and call home.
+>>>>>>> b0e9dd8b67fb33731d92cc972a1c1674b7ad0cc5
                   </div>
                 </div>
               </div>
@@ -98,7 +103,11 @@ const about = () => {
                 </div>
                 <div id="acordion_3" className="collapse">
                   <div className="panel-body">
+<<<<<<< HEAD
                   We're always striving to aim higher by helping our residents to continue living their most <b>meaningful</b> life in a comfortable setting with our help.                  
+=======
+                    We're always striving to aim higher by helping our residents to continue living their most <strong>meaningful</strong> life in a comfortable setting with our help.
+>>>>>>> b0e9dd8b67fb33731d92cc972a1c1674b7ad0cc5
                   </div>
                 </div>
               </div>
@@ -107,13 +116,18 @@ const about = () => {
                   <h4 className="panel-title">
                     <a data-toggle="collapse" data-parent="#accordion3" href="#acordion_4">
                       <i className="fa fa-plus"></i>
-                      Join our great team
+                      Join Our Great Team
                     </a>
                   </h4>
                 </div>
                 <div id="acordion_4" className="collapse">
                   <div className="panel-body">
+<<<<<<< HEAD
                   We aim to surround ourselves and our residents with the highest caliber caregivers around. Do you feel like you're one of these people? Please drop us a line or E-mail,  we'd love to sit down and meet with you!
+=======
+                  We aim to keep surround ourselves and our residents with the highest caliber caregivers around. Do you feel like you're one of these people? 
+                  Please Send us an e-mail and we'd love to sit down to meet with you!
+>>>>>>> b0e9dd8b67fb33731d92cc972a1c1674b7ad0cc5
                   </div>
                 </div>
               </div>
@@ -129,6 +143,11 @@ const about = () => {
       </div>
     </section>
   );
+<<<<<<< HEAD
 
 };
+=======
+}
+
+>>>>>>> b0e9dd8b67fb33731d92cc972a1c1674b7ad0cc5
 export default about;
