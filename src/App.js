@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import { Route, Switch } from "react-router-dom";
 import './App.css';
 
+// Components
 import Header from "./components/Navigation/Header/Header";
 import Footer from "./components/Navigation/Footer/Footer";
 import Home from "./containers/Home/Home";
+import SoftwareEngineers from "./containers/SoftwareEngineers/SoftwareEngineers";
 
 class App extends Component {
   render() {
@@ -11,7 +14,10 @@ class App extends Component {
       <div id="wrapper">
         <Header />
         
-        <Home />
+        <Switch>
+          <Route path="/software-engineers" component={ SoftwareEngineers } />
+          <Route path="/" exact component={ Home } />
+        </Switch>
 
         <Footer />
       </div>
