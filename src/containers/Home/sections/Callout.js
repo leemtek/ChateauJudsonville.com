@@ -13,7 +13,7 @@ const callout = () => {
           </div>
 
           <div className="col-md-3">{/* button */}
-            <a href="#purchase" className="btn btn-primary btn-lg">Contact Us Today</a>
+            <a href="#section-contact" className="btn btn-primary btn-lg">Contact Us Today</a>
           </div>
 
         </div>
