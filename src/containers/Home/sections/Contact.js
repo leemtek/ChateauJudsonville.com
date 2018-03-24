@@ -2,13 +2,21 @@ import React, { Component } from 'react'
 import Formsy from 'formsy-react';
 import CjInput from "../../../components/UI/Input/HomeContact/CjInput";
 import CjTextArea from "../../../components/UI/Input/HomeContact/CjTextArea";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default class Contact extends Component {
   constructor(props) {
     super(props);
     this.disableButton = this.disableButton.bind(this);
     this.enableButton = this.enableButton.bind(this);
-    this.state = { canSubmit: false };
+
+    this.state = { 
+      canSubmit: false,
+      recaptcha: {
+        valid: false,
+        response: null
+      } // recaptcha
+    }; // state
   }
 
   disableButton() {
@@ -19,13 +27,50 @@ export default class Contact extends Component {
     this.setState({ canSubmit: true });
   }
 
-  handleSubmit(model) {
+  handleSubmit = (model) => {
     // fetch('http://example.com/', {
     //   method: 'post',
     //   body: JSON.stringify(model)
     // });
 
-    console.log(model);
+    // Simulate JSON response.
+    if (this.state.recaptcha.valid === true){
+      // Add captcha value to model.
+      model.googleResponse = this.state.recaptcha.response;
+      
+      console.log(model);
+    } else {
+      document.getElementById("required-recaptcha").style.display = "initial";
+      console.log("Recaptcha required.");
+    } // if
+  }
+
+  /**
+   * Set recaptcha value.
+   * @param {string} value 
+   */
+  handleRecaptchaOnChange = (value) => {
+    if (value != null) {
+      this.setState({
+        recaptcha: {
+          valid: true,
+          response: value
+        } // recaptcha
+      }); // setState
+
+      // Hide required label.
+      document.getElementById("required-recaptcha").style.display = "none";
+    } else {
+      this.setState({
+        recaptcha: {
+          valid: false,
+          response: null
+        } // recaptcha
+      }); // setState
+
+      // Display required label.
+      document.getElementById("required-recaptcha").style.display = "initial";
+    } // else
   }
 
   render() {
@@ -67,14 +112,14 @@ export default class Contact extends Component {
                   validations="isEmail"
                   validationError="Invalid Email. Required format: username@domain.com"
                   required />
-              </div>
+              </div>{/* /col */}
               <div className="col-md-4">
                 <CjInput className="fullwidth" type="text" 
-                name="contact_subject"
-                placeholder="SUBJECT" 
-                title="subject" />
-              </div>
-            </div>
+                  name="contact_subject"
+                  placeholder="SUBJECT" 
+                  title="subject" />
+              </div>{/* /col */}
+            </div>{/* /row */}
 
             <div className="row">
               <div className="col-md-12">
@@ -82,11 +127,25 @@ export default class Contact extends Component {
                   name="contact_message" 
                   placeholder="MESSAGE *"
                   required />
-              </div>
+              </div>{/* /col */}
+            </div>{/* /row */}
+
+            <div className="row">
+              <div className="col-md-12">
+                <ReCAPTCHA
+                  ref="recaptcha"
+                  sitekey="6LeEpk4UAAAAACUCpNPGTI9-9V8b5-swJGH9XBTs"
+                  onChange={this.handleRecaptchaOnChange}
+                />
+                <small id="required-recaptcha" className="label label-danger" style={{display: "none"}}>Recaptcha Required</small>
+              </div>{/* /col */}
+            </div>{/* /row */}
+            
+            <div className="row" style={{paddingTop: "20px"}}>
               <div className="col-md-12">
                 <button className="btn btn-primary" disabled={!this.state.canSubmit}>SEND MESSAGE</button>
               </div>
-            </div>
+            </div>{/* /row */}
           </Formsy>
         </div>
       </section>
