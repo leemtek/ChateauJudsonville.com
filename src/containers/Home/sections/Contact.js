@@ -27,21 +27,25 @@ export default class Contact extends Component {
     this.setState({ canSubmit: true });
   }
 
+  /**
+   * Submits to Google Cloud Function
+   * @param {string} model - All form values.
+   */
   handleSubmit = (model) => {
-    // fetch('http://example.com/', {
-    //   method: 'post',
-    //   body: JSON.stringify(model)
-    // });
-
     // Simulate JSON response.
     if (this.state.recaptcha.valid === true){
       // Add captcha value to model.
       model.googleResponse = this.state.recaptcha.response;
       
       console.log(model);
+
+      // TODO: Submit results to GCF and attain response code.
+      // fetch('http://example.com/', {
+      //   method: 'post',
+      //   body: JSON.stringify(model)
+      // });
     } else {
       document.getElementById("required-recaptcha").style.display = "initial";
-      console.log("Recaptcha required.");
     } // if
   }
 
