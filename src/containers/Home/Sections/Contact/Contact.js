@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import Formsy from 'formsy-react';
-import CjInput from "../../../components/UI/Input/HomeContact/CjInput";
-import CjTextArea from "../../../components/UI/Input/HomeContact/CjTextArea";
+import CjInput from "../../../../components/UI/Input/HomeContact/CjInput";
+import CjTextArea from "../../../../components/UI/Input/HomeContact/CjTextArea";
 import ReCAPTCHA from "react-google-recaptcha";
+import "./Contact.css";
 
 export default class Contact extends Component {
   isTest = true;
@@ -19,7 +20,12 @@ export default class Contact extends Component {
         response: null
       } // recaptcha
     }; // state
-  }
+  } // constructor
+
+  componentDidMount() {
+    // Initially hide the success message.
+    document.getElementById("message-success").style.display = "none";
+  } // componentDidMount()
 
   disableButton() {
     this.setState({ canSubmit: false });
@@ -41,17 +47,34 @@ export default class Contact extends Component {
       
       console.log(model);
 
-      // Submit results to GCF and attain response code.
-      let gcfResponse = fetch((this.isTest) ? "http://localhost:5000/leemtek-secure-forms/us-central1/chateaujudsonville/send" : "https://realurl.com/send", {
+      // Submit results to GCF and indicate status.
+      fetch((this.isTest) ? "http://localhost:5000/leemtek-secure-forms/us-central1/chateaujudsonville/send" : "https://realurl.com/send", {
         method: "post",
         body: JSON.stringify(model), 
-        headers: new Headers({
-          "Content-Type": "application/json"
-        })
+        headers: new Headers({"Content-Type": "application/json"})
       })
-      .then(response => console.log(response.json()));
+      .then(response => response.json())
+      .then((jsonResult) => {
+        if(jsonResult.status === "email sent") {
+          // Hide recaptcha and submit button.
+          document.getElementById("required-recaptcha").style.display = "none";
+          document.getElementById("button-send").style.display = "none";
+          
+          // Indicate a success message.
+          document.getElementById("message-success").style.display = "initial";
+        } else {
+          // Show recaptcha and submit button.
+          document.getElementById("required-recaptcha").style.display = "initial";
+          document.getElementById("button-send").style.display = "initial";
+          
+          // A recaptcha error occurred.
+          document.getElementById("message-success").style.display = "none";
+        }
+      });
     } else {
       document.getElementById("required-recaptcha").style.display = "initial";
+      document.getElementById("button-send").style.display = "initial";
+      document.getElementById("message-success").style.display = "none";
     } // if
   }
 
@@ -151,8 +174,9 @@ export default class Contact extends Component {
             </div>{/* /row */}
             
             <div className="row" style={{paddingTop: "20px"}}>
-              <div className="col-md-12">
-                <button className="btn btn-primary" disabled={!this.state.canSubmit}>SEND MESSAGE</button>
+              <div className="col-md-4">
+                <button id="button-send" className="btn btn-primary" disabled={!this.state.canSubmit}>SEND MESSAGE</button>
+                <div id="message-success" className="alert alert-success"><strong>Success!</strong> Your message has been received!</div>
               </div>
             </div>{/* /row */}
           </Formsy>
@@ -161,3 +185,4 @@ export default class Contact extends Component {
     ); // return
   } // render()
 }
+
