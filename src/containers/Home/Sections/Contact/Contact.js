@@ -6,7 +6,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 import "./Contact.css";
 
 export default class Contact extends Component {
-  isTest = true;
+  isTest = false;
   
   constructor(props) {
     super(props);
