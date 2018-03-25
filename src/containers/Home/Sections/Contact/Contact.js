@@ -25,6 +25,7 @@ export default class Contact extends Component {
   componentDidMount() {
     // Initially hide the success message.
     document.getElementById("message-success").style.display = "none";
+    document.getElementById("message-recaptcha-error").style.display = "none";
   } // componentDidMount()
 
   disableButton() {
@@ -45,10 +46,11 @@ export default class Contact extends Component {
       // Add captcha value to model.
       model.googleResponse = this.state.recaptcha.response;
       
-      console.log(model);
+      // Output model.
+      fetch((this.isTest) ? console.log(model) : "");
 
       // Submit results to GCF and indicate status.
-      fetch((this.isTest) ? "http://localhost:5000/leemtek-secure-forms/us-central1/chateaujudsonville/send" : "https://realurl.com/send", {
+      fetch((this.isTest) ? "http://localhost:5000/leemtek-secure-forms/us-central1/chateaujudsonville/send" : "https://us-central1-leemtek-secure-forms.cloudfunctions.net/chateaujudsonville/send", {
         method: "post",
         body: JSON.stringify(model), 
         headers: new Headers({"Content-Type": "application/json"})
@@ -57,24 +59,38 @@ export default class Contact extends Component {
       .then((jsonResult) => {
         if(jsonResult.status === "email sent") {
           // Hide recaptcha and submit button.
-          document.getElementById("required-recaptcha").style.display = "none";
+          document.getElementById("recaptcha").style.display = "none";
+          document.getElementById("message-required-recaptcha").style.display = "none";
           document.getElementById("button-send").style.display = "none";
           
           // Indicate a success message.
           document.getElementById("message-success").style.display = "initial";
-        } else {
+          document.getElementById("message-recaptcha-error").style.display = "none";
+        } else if(jsonResult.status === "recaptcha failure") {
           // Show recaptcha and submit button.
-          document.getElementById("required-recaptcha").style.display = "initial";
+          document.getElementById("recaptcha").style.display = "initial";
+          document.getElementById("message-required-recaptcha").style.display = "initial";
           document.getElementById("button-send").style.display = "initial";
           
           // A recaptcha error occurred.
           document.getElementById("message-success").style.display = "none";
+          document.getElementById("message-recaptcha-error").style.display = "initial";
+        } else {
+          // Show recaptcha and submit button.
+          document.getElementById("recaptcha").style.display = "initial";
+          document.getElementById("message-required-recaptcha").style.display = "initial";
+          document.getElementById("button-send").style.display = "initial";
+          
+          // A recaptcha error occurred.
+          document.getElementById("message-success").style.display = "none";
+          document.getElementById("message-recaptcha-error").style.display = "initial";
         }
       });
     } else {
-      document.getElementById("required-recaptcha").style.display = "initial";
+      document.getElementById("message-required-recaptcha").style.display = "initial";
       document.getElementById("button-send").style.display = "initial";
       document.getElementById("message-success").style.display = "none";
+      document.getElementById("message-recaptcha-error").style.display = "none";
     } // if
   }
 
@@ -90,9 +106,6 @@ export default class Contact extends Component {
           response: value
         } // recaptcha
       }); // setState
-
-      // Hide required label.
-      document.getElementById("required-recaptcha").style.display = "none";
     } else {
       this.setState({
         recaptcha: {
@@ -100,9 +113,6 @@ export default class Contact extends Component {
           response: null
         } // recaptcha
       }); // setState
-
-      // Display required label.
-      document.getElementById("required-recaptcha").style.display = "initial";
     } // else
   }
 
@@ -165,11 +175,12 @@ export default class Contact extends Component {
             <div className="row">
               <div className="col-md-12">
                 <ReCAPTCHA
+                  id="recaptcha"
                   ref="recaptcha"
                   sitekey="6LeEpk4UAAAAACUCpNPGTI9-9V8b5-swJGH9XBTs"
                   onChange={this.handleRecaptchaOnChange}
                 />
-                <small id="required-recaptcha" className="label label-danger" style={{display: "none"}}>Recaptcha Required</small>
+                <small id="message-required-recaptcha" className="label label-danger" style={{display: "none"}}>Recaptcha Required</small>
               </div>{/* /col */}
             </div>{/* /row */}
             
@@ -177,6 +188,7 @@ export default class Contact extends Component {
               <div className="col-md-4">
                 <button id="button-send" className="btn btn-primary" disabled={!this.state.canSubmit}>SEND MESSAGE</button>
                 <div id="message-success" className="alert alert-success"><strong>Success!</strong> Your message has been received!</div>
+                <div id="message-recaptcha-error" className="alert alert-danger"><strong>Oh snap!</strong> Your ReCAPTCHA is incorrect :(</div>
               </div>
             </div>{/* /row */}
           </Formsy>
