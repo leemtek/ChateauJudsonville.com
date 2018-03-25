@@ -30,7 +30,7 @@ class CjTextArea extends React.Component {
           // Specific to textarea.
           rows={this.props.rows}
         ></textarea>
-        <span>{errorMessage}</span>
+        <small className="label label-danger">{errorMessage}</small>
       </div>
     );
   }

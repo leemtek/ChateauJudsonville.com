@@ -27,7 +27,8 @@ class CjInput extends React.Component {
           onChange={this.changeValue}
           value={this.props.getValue() || ''}
         />
-        <span>{errorMessage}</span>
+        <span></span>
+        <small className="label label-danger">{errorMessage}</small>
       </div>
     );
   }
