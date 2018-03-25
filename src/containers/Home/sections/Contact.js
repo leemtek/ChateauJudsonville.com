@@ -5,6 +5,8 @@ import CjTextArea from "../../../components/UI/Input/HomeContact/CjTextArea";
 import ReCAPTCHA from "react-google-recaptcha";
 
 export default class Contact extends Component {
+  isTest = true;
+  
   constructor(props) {
     super(props);
     this.disableButton = this.disableButton.bind(this);
@@ -39,11 +41,15 @@ export default class Contact extends Component {
       
       console.log(model);
 
-      // TODO: Submit results to GCF and attain response code.
-      // fetch('http://example.com/', {
-      //   method: 'post',
-      //   body: JSON.stringify(model)
-      // });
+      // Submit results to GCF and attain response code.
+      let gcfResponse = fetch((this.isTest) ? "http://localhost:5000/leemtek-secure-forms/us-central1/chateaujudsonville/send" : "https://realurl.com/send", {
+        method: "post",
+        body: JSON.stringify(model), 
+        headers: new Headers({
+          "Content-Type": "application/json"
+        })
+      })
+      .then(response => console.log(response.json()));
     } else {
       document.getElementById("required-recaptcha").style.display = "initial";
     } // if
@@ -89,7 +95,6 @@ export default class Contact extends Component {
             </h2>
             
             <div className="divider half-margins onepage center">{/* lines divider */}</div>
-
           </header>
 
           <div className="text-center">
@@ -103,14 +108,14 @@ export default class Contact extends Component {
             <div className="row">
               <div className="col-md-4">
                 <CjInput className="fullwidth" type="text" 
-                  name="contact_name" 
+                  name="strName" 
                   placeholder="NAME *" 
                   title="Name"
                   required />
               </div>{/* /.col */}
               <div className="col-md-4">
                 <CjInput className="fullwidth" type="email" 
-                  name="contact_email"
+                  name="strEmail"
                   placeholder="EMAIL *" 
                   title="Email"
                   validations="isEmail"
@@ -119,7 +124,7 @@ export default class Contact extends Component {
               </div>{/* /col */}
               <div className="col-md-4">
                 <CjInput className="fullwidth" type="text" 
-                  name="contact_subject"
+                  name="strSubject"
                   placeholder="SUBJECT" 
                   title="subject" />
               </div>{/* /col */}
@@ -128,7 +133,7 @@ export default class Contact extends Component {
             <div className="row">
               <div className="col-md-12">
                 <CjTextArea className="fullwidth" rows="5" type="textarea" 
-                  name="contact_message" 
+                  name="strMessage" 
                   placeholder="MESSAGE *"
                   required />
               </div>{/* /col */}
