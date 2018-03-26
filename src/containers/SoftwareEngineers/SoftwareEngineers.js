@@ -31,15 +31,17 @@ const softwareengineers = () => {
           <div className="col-sm-3 col-md-3">
             <div className="box-content thumbnail text-center">
               <a href="page-about-me.html" className="item-image">
-                <img className="img-responsive" src="https://theme.stepofweb.com/Epona/v1.4.4/HTML/assets/images/demo/people/fixed-height/9.jpg" alt="Duane Leem" />
+                <img className="img-responsive" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/chateaujudsonville/images/profile-duaneleem.jpg" alt="Duane Leem" />
                 <h3>
                   <span>Duane Leem</span> <br />
                   <small>Project Manager</small>
                 </h3>
               </a>
               <div className="caption text-left">
-                <p>Loves to help people solve their complex problems using the power of Web Programming. Loves to brag to his kids how coding is awesome.</p>
-                <a href="https://www.facebook.com/duaneleem" className="social rounded fa fa-facebook"></a>
+                <p>With extensive knowledge in the IT Field and Project Management Duane is able to lead his team to complete quality work and designs for his clients, Duane is a veteran in the field. While using web development to solve problems and in turn creating solutions. Duane is an avid consumer of knowledge while passing his passion to his Children and those around him.</p>
+                <a href="https://www.facebook.com/duaneleem" className="social rounded fa fa-facebook" target="blank"></a>
+                <a href="https://www.linkedin.com/in/duaneleem" className="social rounded fa fa-linkedin" target="blank"></a>
+                <a href="https://www.duaneleem.com" className="social rounded fa fa-code" target="blank"></a>
               </div>
             </div>
           </div>
@@ -47,17 +49,15 @@ const softwareengineers = () => {
           <div className="col-sm-3 col-md-3">
             <div className="box-content thumbnail text-center">
               <a href="page-about-me.html" className="item-image">
-                <img className="img-responsive" src="https://theme.stepofweb.com/Epona/v1.4.4/HTML/assets/images/demo/people/fixed-height/10.jpg" alt="Derrick Leem" />
+                <img className="img-responsive" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/chateaujudsonville/images/profile-derrickleem.jpg" alt="Derrick Leem" />
                 <h3>
                   <span>Derrick Leem</span> <br />
-                  <small>Engineer</small>
+                  <small>Software Engineer</small>
                 </h3>
               </a>
               <div className="caption text-left">
-                <p>Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis.</p>
-                <a href="#" className="social rounded fa fa-facebook"></a>
-                <a href="#" className="social rounded fa fa-twitter"></a>
-                <a href="#" className="social rounded fa fa-google-plus"></a>
+                <p>Derrick while doing web development is also currently in school pursuing a degree in computer science. While applying the skills he already had coupled with the new skills through study has propelled him to his current skill level.</p>
+                <a href="https://www.linkedin.com/in/derrick-leem/" className="social rounded fa fa-linkedin" target="blank"></a>
               </div>
             </div>
           </div>
@@ -65,35 +65,35 @@ const softwareengineers = () => {
           <div className="col-sm-3 col-md-3">
             <div className="box-content thumbnail text-center">
               <a href="page-about-me.html" className="item-image">
-                <img className="img-responsive" src="https://theme.stepofweb.com/Epona/v1.4.4/HTML/assets/images/demo/people/fixed-height/11.jpg" alt="" />
-                <h3>
-                  <span>Will Carpio</span> <br />
-                  <small>Engineer</small>
-                </h3>
-              </a>
-              <div className="caption text-left">
-                <p>Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this template amets sumon.</p>
-                <a href="#" className="social rounded fa fa-facebook"></a>
-                <a href="#" className="social rounded fa fa-twitter"></a>
-                <a href="#" className="social rounded fa fa-google-plus"></a>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-sm-3 col-md-3">
-            <div className="box-content thumbnail text-center">
-              <a href="page-about-me.html" className="item-image">
-                <img className="img-responsive" src="https://theme.stepofweb.com/Epona/v1.4.4/HTML/assets/images/demo/people/fixed-height/13.jpg" alt="" />
+                <img className="img-responsive" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/chateaujudsonville/images/profile-gabetumbaga.jpg" alt="Gabe Tumbaga" />
                 <h3>
                   <span>Gabe Tumbaga</span> <br />
-                  <small>Engineer</small>
+                  <small>Web Developer</small>
                 </h3>
               </a>
               <div className="caption text-left">
-                <p>Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this template.</p>
-                <a href="#" className="social rounded fa fa-facebook"></a>
-                <a href="#" className="social rounded fa fa-twitter"></a>
-                <a href="#" className="social rounded fa fa-google-plus"></a>
+                <p>With experience from multiple aspects in the field Gabe has been apart of a lot. whether its upkeep on ecommerce, React or the many other programming languages he knows. when he's not with his kids or family, you can find him modding Minecraft and tweaking his other favorite games.</p>
+                <a href="https://facebook.com/gtumbaga" className="social rounded fa fa-facebook" target="blank"></a>
+                <a href="https://twitter.com/gtumbaga" className="social rounded fa fa-twitter" target="blank"></a>
+                <a href="https://www.linkedin.com/in/gtumbaga/" className="social rounded fa fa-linkedin" target="blank"></a>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-sm-3 col-md-3">
+            <div className="box-content thumbnail text-center">
+              <a href="page-about-me.html" className="item-image">
+                <img className="img-responsive" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/chateaujudsonville/images/profile-willcarpio.jpg" alt="Will Carpio and Bart his Dog" />
+                <h3>
+                  <span>Will Carpio</span> <br />
+                  <small>Software Engineer</small>
+                </h3>
+              </a>
+              <div className="caption text-left">
+                <p>New to the development team but on the fast track to becoming on par with his peers, Will is versed and knowledgeable in a few languages and on the way to mastering more. When not down working on new project you can usually find him with his dog Bart.</p>
+                <a href="https://www.facebook.com/people/Will-Carpio/100008976306275" className="social rounded fa fa-facebook" target="blank"></a>
+                <a href="https://twitter.com/Humble_Gatsby" className="social rounded fa fa-twitter" target="blank"></a>
+                <a href="https://www.linkedin.com/in/will-carpio-821b1815a/" className="social rounded fa fa-linkedin" target="blank"></a>
               </div>
             </div>
           </div>
