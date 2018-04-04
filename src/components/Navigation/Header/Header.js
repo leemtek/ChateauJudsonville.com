@@ -6,7 +6,7 @@ const app_header = () => {
     <header id="topNav" className="fixed">
 				<div className="container">
           {/* Logo */}
-					<a className="logo onepage" href="index.html">
+					<a className="logo onepage" href="/">
 						<img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/chateaujudsonville/assets/images/logo.png" height="50" alt="" />
 					</a>
 
