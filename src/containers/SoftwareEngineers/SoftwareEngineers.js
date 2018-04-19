@@ -1,10 +1,13 @@
 import React from "react";
+import Header1 from "../../components/Navigation/Header/Header1"
 
 const softwareengineers = () => {
   return (
     <div style={{ paddingTop: "60px" }}>
       <section className="page-title">
 				<div className="container">
+        <Header1/>
+
 					<header>
             {/* Breadcrumb */}
 						<ul className="breadcrumb">
@@ -15,7 +18,7 @@ const softwareengineers = () => {
 						{/* Page Title */}
             <h2>Software Engineers</h2>
 					</header>
-				</div>			
+				</div>
 			</section>
 
       <section className="container">
@@ -95,6 +98,26 @@ const softwareengineers = () => {
                 <a href="https://twitter.com/Humble_Gatsby" className="social rounded fa fa-twitter" target="blank"></a>
                 <a href="https://www.linkedin.com/in/will-carpio-821b1815a/" className="social rounded fa fa-linkedin" target="blank"></a>
               </div>
+
+            </div>
+          </div>
+
+          <div className="col-sm-3 col-md-3">
+            <div className="box-content thumbnail text-center">
+              <a href="page-about-me.html" className="item-image">
+                <img className="img-responsive" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/chateaujudsonville/images/profile-willcarpio.jpg" alt="Will Carpio and Bart his Dog" />
+                <h3>
+                  <span>Aliyar Fatemi</span> <br />
+                  <small>Web Developer</small>
+                </h3>
+              </a>
+              <div className="caption text-left">
+                <p>He is a self-motivated full stack web developer with experience in: Developing websites and web applications (Front-End)· He loves to code and have the potential to visualise the problem hence scaling up to an appropriate solution for it. Moreover he wish to use his knowledge to help the society by implementing new technologies </p>
+                <a href="https://www.facebook.com/aliyar.fatemi" className="social rounded fa fa-facebook" target="blank"></a>
+                <a href="https://www.linkedin.com/in/aliyar-fatemi-ab514468/" className="social rounded fa fa-linkedin" target="blank"></a>
+                  <a href="http://www.aliyar.tech" className="social rounded fa fa-code" target="blank"></a>
+              </div>
+
             </div>
           </div>
 
