@@ -17,6 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "rm -r docs/ && npm run build && mv build docs"
+    "deploy-build": "rm -r docs/ && npm run build && mv build docs",
+    "deploy": "yarn run build && aws s3 rm s3://web-chateaujudsonville.com --recursive --profile leemtek && aws s3 cp build s3://web-chateaujudsonville.com --recursive --profile leemtek && aws configure set preview.cloudfront true --profile leemtek && aws cloudfront create-invalidation --distribution-id E3BK2LEEENUS9L --paths '/*' --profile leemtek"
   }
 }
