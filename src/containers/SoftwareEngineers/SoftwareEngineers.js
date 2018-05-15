@@ -1,12 +1,12 @@
 import React from "react";
-import Header1 from "../../components/Navigation/Header/Header1"
+import Header from "../../components/Navigation/Header/Default"
 
 const softwareengineers = () => {
   return (
     <div style={{ paddingTop: "60px" }}>
       <section className="page-title">
 				<div className="container">
-        <Header1/>
+        <Header />
 
 					<header>
             {/* Breadcrumb */}
@@ -105,7 +105,7 @@ const softwareengineers = () => {
           <div className="col-sm-3 col-md-3">
             <div className="box-content thumbnail text-center">
               <a href="page-about-me.html" className="item-image">
-                <img className="img-responsive" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/chateaujudsonville/images/profile-willcarpio.jpg" alt="Will Carpio and Bart his Dog" />
+                <img className="img-responsive" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/chateaujudsonville/images/profile-aliyar.jpg" alt="Aliyar Fatemi" />
                 <h3>
                   <span>Aliyar Fatemi</span> <br />
                   <small>Web Developer</small>
