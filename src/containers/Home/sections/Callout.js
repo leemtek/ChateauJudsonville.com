@@ -8,7 +8,7 @@ const callout = () => {
         <div className="row">
 
           <div className="col-md-9">{/* title + shortdesc */}
-            <h3>Independance with the right amount of dependance.</h3>
+            <h3>Independence with the right amount of dependence.</h3>
             <p>Live a strong and independent life like you've always had.</p>
           </div>
 
