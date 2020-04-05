@@ -18,40 +18,48 @@ const about = () => {
 
           <div className="col-md-4 col-sm-6">
             <h4>Services</h4>
-            <p className="dropcap">We are a non-medical facility that provide services that caters to meet each Resident's need.</p>
-            <p>Here is a list of services we offer:</p>
+            <p className="dropcap">We are a non-medical facility that specifically caters to each Resident's needs.</p>
+            <p>We offer:</p>
             <ul>
-              <li>Continuous 24-Hour care and supervision</li>
-              <li>3 nutritious meals daily and snacks available</li>
-              <li>Special diet prescribed by physician</li>
-              <li>Assistance with personal activities of daily living (dressing, toileting, eating, bathing, grooming and mobility)</li>
-              <li>Assistance in taking the prescribed and over the counter medications</li>
-              <li>Laundering of personal clothing</li>
-              <li>Clean bed and bath linens weekly or as often as needed</li>
-              <li>Cleaning of Resident's room</li>
-              <li>Assistance in meeting the necessary medical and physical needs of the resident</li>
-              <li>Daily Observation of changes in physical, mental, emotional and social functioning.</li>
-              <li>Planned and activity program including arrangement for utilization of available community resources.</li>
-              <li>Bedside care and tray service for minor temporary illnesses or recovery from surgery.</li>
+              <li>Continuous 24-hour care and supervision</li>
+              <li>3 Nutritious meals and snacks daily</li>
+              <li>Special diet prescribed by a physician</li>
+              <li>Assistance with personal daily activities (eating, bathing, dressing, grooming, toileting, and mobility)</li>
+              <li>Assistance in taking medications</li>
+              <li>Notification of resident’s family physician, and other appropriate person/agency of resident’s condition</li>
+              <li>Planning or arranging medical and dental appointments.</li>
+              <li>Planned activity program including arrangement for utilization of available community resources</li>
+              <li>Bedside care and food service for minor temporary illness or recovery from surgery</li>
+              <li>Weekly housekeeping</li>
             </ul>
           </div>
 
           <div className="col-md-4 col-sm-6">
             <h4>Amenities</h4>
-            <p>Established in the beautiful city of Antioch California near the Lone Tree Golf and our Contra Loma Regional Park.</p>
+            <p>Located in the beautiful city of Antioch California, near the Lone Tree Golf and Contra Loma Regional Park.</p>
 
-            <p>Our facility offers:<br />
-            2 Private Bedroom fully-furnished
-            1 Shared Bedroom fully-furnished
-            Each room includes HD Flat Screen Tv
-            with telephone.</p>
+            <p>Our facility offers:</p>
+            
+            <ul>
+              <li>2 Private Bedroom fully-furnished</li>
+              <li>1 Shared Bedroom fully-furnished, <br />
+                * Each room includes HD Flat Screen Television, <br />
+                * Telephone</li>
+              <li>Lodging for private and semi-private rooms</li>
+              <li>Functional living room</li>
+              <li>3 Bathrooms</li>
+              <li>Kitchen</li>
+              <li>Spacious backyard and garden for recreational activities</li>
+              <li>Wi-Fi Connection</li>
+              <li>Accessible to hospitals and shopping centers</li>
+            </ul>
 
-            <p>*Unfurnished room option available
-            upon request if Resident prefers their
-            own furniture.</p>
+            <p>* Unfurnished room option available upon request if Resident prefers their own furniture.</p>
           </div>
 
           <div className="col-md-4 col-sm-12">
+            <h4>Vision</h4>
+            <p>Our vision is to witness our residents achieve self-fulfillment as they are surrounded by people who love and support them physically, emotionally, mentally, and spiritually.</p>
 
             {/* ACCORDION */}
             <div className="accordion panel-group transparent" id="accordion2">
@@ -64,12 +72,10 @@ const about = () => {
                     </a>
                   </h4>
                 </div>
-                <div id="acordion_1" className="collapse">
+                <div id="acordion_1">
                   <div className="panel-body">
-                  Our mission is to fully meet the needs of each of our Residents' while challenging them to the highest level of personal independence in 
-                  the tasks of daily living.<br /><br />
-                  We strive to enhance and enrich the lives of our Resident's by creating a safe and comfortable environment that
-                  tends and stimulates individuals emotionally, physically, mentally and spiritually.
+                    <p>Our mission is to cultivate our resident's sense of worth and purpose and belonging through supporting their everyday needs while treating them with utmost respect and dignity.</p>
+                    <p>We endeavor to enhance and enrich their lives by creating a safe and comfortable environment that encourages them to enjoy and express themselves.</p>
                   </div>
                 </div>
               </div>
