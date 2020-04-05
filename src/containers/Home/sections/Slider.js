@@ -50,6 +50,21 @@ const slider = () => {
                 </div>
             </div>
 
+            <div className="tp-caption sfr tp-resizeme" 
+              data-x="60" 
+              data-y="440" 
+              data-speed="750" 
+              data-start="1800" 
+              data-easing="easeOutExpo" 
+              data-splitin="none" 
+              data-splitout="none" 
+              data-elementdelay="0.1" 
+              data-endelementdelay="0.1" 
+              data-endspeed="300">
+                <a href="https://d1xrp9zhb3ks3c.cloudfront.net/web/chateaujudsonville/assets/downloads/chateaujudsonville-brochure-20191101.pdf" className="btn btn-success btn-lg" style={{marginRight: "10px"}}><i className="fa fa-file"></i> See Brochure</a> 
+                <a href="#section-contact" className="btn btn-primary btn-lg"><i className="fa fa-phone"></i> Contact Us</a>
+            </div>
+
             <div className="tp-caption sft medium_light_white" 
               data-x="600" 
               data-y="160" 
